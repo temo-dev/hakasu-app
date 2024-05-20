@@ -35,16 +35,20 @@ export const routes: Routes = [
         component: AppLayout,
         children: [
             // dashboard
-            { path: '', component: IndexComponent, title: 'Sales Admin | VRISTO - Multipurpose Tailwind Dashboard Template' },
-            { path: 'analytics', component: AnalyticsComponent, title: 'Analytics Admin | VRISTO - Multipurpose Tailwind Dashboard Template' },
-            { path: 'finance', component: FinanceComponent, title: 'Finance Admin | VRISTO - Multipurpose Tailwind Dashboard Template' },
-            { path: 'crypto', component: CryptoComponent, title: 'Crypto Admin | VRISTO - Multipurpose Tailwind Dashboard Template' },
+            { path: '', component: IndexComponent, title: 'HAKASU - HatSolutions - Lets Create Successful Digital Projects Together' },
+            {
+                path: 'analytics',
+                component: AnalyticsComponent,
+                title: 'Analytics Admin | HAKASU - HatSolutions - Lets Create Successful Digital Projects Together',
+            },
+            { path: 'finance', component: FinanceComponent, title: 'Finance Admin | HAKASU - HatSolutions - Lets Create Successful Digital Projects Together' },
+            { path: 'crypto', component: CryptoComponent, title: 'Crypto Admin | HAKASU - HatSolutions - Lets Create Successful Digital Projects Together' },
 
             //apps
             { path: '', loadChildren: () => import('./apps/apps.module').then((d) => d.AppsModule) },
 
             // widgets
-            { path: 'widgets', component: WidgetsComponent, title: 'Widgets | VRISTO - Multipurpose Tailwind Dashboard Template' },
+            { path: 'widgets', component: WidgetsComponent, title: 'Widgets | HAKASU - HatSolutions - Lets Create Successful Digital Projects Together' },
 
             // components
             { path: '', loadChildren: () => import('./components/components.module').then((d) => d.ComponentsModule) },
@@ -59,21 +63,29 @@ export const routes: Routes = [
             { path: '', loadChildren: () => import('./users/user.module').then((d) => d.UsersModule) },
 
             // tables
-            { path: 'tables', component: TablesComponent, title: 'Tables | VRISTO - Multipurpose Tailwind Dashboard Template' },
+            { path: 'tables', component: TablesComponent, title: 'Tables | HAKASU - HatSolutions - Lets Create Successful Digital Projects Together' },
             { path: '', loadChildren: () => import('./datatables/datatables.module').then((d) => d.DatatablesModule) },
 
             // font-icons
-            { path: 'font-icons', component: FontIconsComponent, title: 'Font Icons | VRISTO - Multipurpose Tailwind Dashboard Template' },
+            {
+                path: 'font-icons',
+                component: FontIconsComponent,
+                title: 'Font Icons | HAKASU - HatSolutions - Lets Create Successful Digital Projects Together',
+            },
 
             // charts
-            { path: 'charts', component: ChartsComponent, title: 'Charts | VRISTO - Multipurpose Tailwind Dashboard Template' },
+            { path: 'charts', component: ChartsComponent, title: 'Charts | HAKASU - HatSolutions - Lets Create Successful Digital Projects Together' },
 
             // dragndrop
-            { path: 'dragndrop', component: DragndropComponent, title: 'Dragndrop | VRISTO - Multipurpose Tailwind Dashboard Template' },
+            { path: 'dragndrop', component: DragndropComponent, title: 'Dragndrop | HAKASU - HatSolutions - Lets Create Successful Digital Projects Together' },
 
             // pages
-            { path: 'pages/knowledge-base', component: KnowledgeBaseComponent, title: 'Knowledge Base | VRISTO - Multipurpose Tailwind Dashboard Template' },
-            { path: 'pages/faq', component: FaqComponent, title: 'FAQ | VRISTO - Multipurpose Tailwind Dashboard Template' },
+            {
+                path: 'pages/knowledge-base',
+                component: KnowledgeBaseComponent,
+                title: 'Knowledge Base | HAKASU - HatSolutions - Lets Create Successful Digital Projects Together',
+            },
+            { path: 'pages/faq', component: FaqComponent, title: 'FAQ | HAKASU - HatSolutions - Lets Create Successful Digital Projects Together' },
         ],
     },
 

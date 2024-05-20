@@ -37,20 +37,48 @@ import { PricingTableComponent } from './pricing-table';
 import { LightboxComponent } from './lightbox';
 
 const routes: Routes = [
-    { path: 'components/tabs', component: TabsComponent, title: 'Tabs | VRISTO - Multipurpose Tailwind Dashboard Template' },
-    { path: 'components/accordions', component: AccordionsComponent, title: 'Accordions | VRISTO - Multipurpose Tailwind Dashboard Template' },
-    { path: 'components/modals', component: ModalsComponent, title: 'Modals | VRISTO - Multipurpose Tailwind Dashboard Template' },
-    { path: 'components/cards', component: CardsComponent, title: 'Cards | VRISTO - Multipurpose Tailwind Dashboard Template' },
-    { path: 'components/carousel', component: CarouselComponent, title: 'Carousel | VRISTO - Multipurpose Tailwind Dashboard Template' },
-    { path: 'components/countdown', component: CountdownComponent, title: 'Countdown | VRISTO - Multipurpose Tailwind Dashboard Template' },
-    { path: 'components/counter', component: CounterComponent, title: 'Counter | VRISTO - Multipurpose Tailwind Dashboard Template' },
-    { path: 'components/sweetalert', component: SweetalertComponent, title: 'Sweetalert | VRISTO - Multipurpose Tailwind Dashboard Template' },
-    { path: 'components/timeline', component: TimelineComponent, title: 'Timeline | VRISTO - Multipurpose Tailwind Dashboard Template' },
-    { path: 'components/notifications', component: NotificationsComponent, title: 'Notifications | VRISTO - Multipurpose Tailwind Dashboard Template' },
-    { path: 'components/media-object', component: MediaObjectComponent, title: 'Media Object | VRISTO - Multipurpose Tailwind Dashboard Template' },
-    { path: 'components/list-group', component: ListGroupComponent, title: 'List Group | VRISTO - Multipurpose Tailwind Dashboard Template' },
-    { path: 'components/pricing-table', component: PricingTableComponent, title: 'Pricing Table | VRISTO - Multipurpose Tailwind Dashboard Template' },
-    { path: 'components/lightbox', component: LightboxComponent, title: 'Lightbox | VRISTO - Multipurpose Tailwind Dashboard Template' },
+    { path: 'components/tabs', component: TabsComponent, title: 'Tabs | HAKASU - HatSolutions - Lets Create Successful Digital Projects Together' },
+    {
+        path: 'components/accordions',
+        component: AccordionsComponent,
+        title: 'Accordions | HAKASU - HatSolutions - Lets Create Successful Digital Projects Together',
+    },
+    { path: 'components/modals', component: ModalsComponent, title: 'Modals | HAKASU - HatSolutions - Lets Create Successful Digital Projects Together' },
+    { path: 'components/cards', component: CardsComponent, title: 'Cards | HAKASU - HatSolutions - Lets Create Successful Digital Projects Together' },
+    { path: 'components/carousel', component: CarouselComponent, title: 'Carousel | HAKASU - HatSolutions - Lets Create Successful Digital Projects Together' },
+    {
+        path: 'components/countdown',
+        component: CountdownComponent,
+        title: 'Countdown | HAKASU - HatSolutions - Lets Create Successful Digital Projects Together',
+    },
+    { path: 'components/counter', component: CounterComponent, title: 'Counter | HAKASU - HatSolutions - Lets Create Successful Digital Projects Together' },
+    {
+        path: 'components/sweetalert',
+        component: SweetalertComponent,
+        title: 'Sweetalert | HAKASU - HatSolutions - Lets Create Successful Digital Projects Together',
+    },
+    { path: 'components/timeline', component: TimelineComponent, title: 'Timeline | HAKASU - HatSolutions - Lets Create Successful Digital Projects Together' },
+    {
+        path: 'components/notifications',
+        component: NotificationsComponent,
+        title: 'Notifications | HAKASU - HatSolutions - Lets Create Successful Digital Projects Together',
+    },
+    {
+        path: 'components/media-object',
+        component: MediaObjectComponent,
+        title: 'Media Object | HAKASU - HatSolutions - Lets Create Successful Digital Projects Together',
+    },
+    {
+        path: 'components/list-group',
+        component: ListGroupComponent,
+        title: 'List Group | HAKASU - HatSolutions - Lets Create Successful Digital Projects Together',
+    },
+    {
+        path: 'components/pricing-table',
+        component: PricingTableComponent,
+        title: 'Pricing Table | HAKASU - HatSolutions - Lets Create Successful Digital Projects Together',
+    },
+    { path: 'components/lightbox', component: LightboxComponent, title: 'Lightbox | HAKASU - HatSolutions - Lets Create Successful Digital Projects Together' },
 ];
 @NgModule({
     imports: [

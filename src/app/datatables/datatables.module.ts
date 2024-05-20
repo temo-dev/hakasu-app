@@ -37,63 +37,75 @@ import { CloneHeaderDatatableComponent } from './clone-header';
 import { ColumnChooserDatatableComponent } from './column-chooser';
 
 const routes: Routes = [
-    { path: 'datatables/basic', component: BasicDatatableComponent, title: 'Basic Table | VRISTO - Multipurpose Tailwind Dashboard Template' },
-    { path: 'datatables/advanced', component: AdvancedDatatableComponent, title: 'Advanced Table | VRISTO - Multipurpose Tailwind Dashboard Template' },
-    { path: 'datatables/skin', component: SkinDatatableComponent, title: 'Skin Table | VRISTO - Multipurpose Tailwind Dashboard Template' },
+    {
+        path: 'datatables/basic',
+        component: BasicDatatableComponent,
+        title: 'Basic Table | HAKASU - HatSolutions - Lets Create Successful Digital Projects Together',
+    },
+    {
+        path: 'datatables/advanced',
+        component: AdvancedDatatableComponent,
+        title: 'Advanced Table | HAKASU - HatSolutions - Lets Create Successful Digital Projects Together',
+    },
+    {
+        path: 'datatables/skin',
+        component: SkinDatatableComponent,
+        title: 'Skin Table | HAKASU - HatSolutions - Lets Create Successful Digital Projects Together',
+    },
     {
         path: 'datatables/order-sorting',
         component: OrderSortingDatatableComponent,
-        title: 'Order Sorting Table | VRISTO - Multipurpose Tailwind Dashboard Template',
+        title: 'Order Sorting Table | HAKASU - HatSolutions - Lets Create Successful Digital Projects Together',
     },
     {
         path: 'datatables/columns-filter',
         component: ColumnsFilterDatatableComponent,
-        title: 'Columns Filter Table | VRISTO - Multipurpose Tailwind Dashboard Template',
+        title: 'Columns Filter Table | HAKASU - HatSolutions - Lets Create Successful Digital Projects Together',
     },
     {
         path: 'datatables/multi-column',
         component: MultiColumnDatatableComponent,
-        title: 'Multi Column Table | VRISTO - Multipurpose Tailwind Dashboard Template',
+        title: 'Multi Column Table | HAKASU - HatSolutions - Lets Create Successful Digital Projects Together',
     },
     {
         path: 'datatables/multiple-tables',
         component: MultiTablesComponent,
-        title: 'Multiple Tables | VRISTO - Multipurpose Tailwind Dashboard Template',
+        title: 'Multiple Tables | HAKASU - HatSolutions - Lets Create Successful Digital Projects Together',
     },
     {
         path: 'datatables/alt-pagination',
         component: AltPaginationDatatableComponent,
-        title: 'Alternative Pagination | VRISTO - Multipurpose Tailwind Dashboard Template',
+        title: 'Alternative Pagination | HAKASU - HatSolutions - Lets Create Successful Digital Projects Together',
     },
     {
         path: 'datatables/checkbox',
         component: CheckboxDatatableComponent,
-        title: 'Checkbox Table | VRISTO - Multipurpose Tailwind Dashboard Template',
+        title: 'Checkbox Table | HAKASU - HatSolutions - Lets Create Successful Digital Projects Together',
     },
     {
         path: 'datatables/range-search',
         component: RangeSearchDatatableComponent,
-        title: 'Range Search Table | VRISTO - Multipurpose Tailwind Dashboard Template',
+        title: 'Range Search Table | HAKASU - HatSolutions - Lets Create Successful Digital Projects Together',
     },
     {
         path: 'datatables/export',
         component: ExportDatatableComponent,
-        title: 'Export Table | VRISTO - Multipurpose Tailwind Dashboard Template',
+        title: 'Export Table | HAKASU - HatSolutions - Lets Create Successful Digital Projects Together',
     },
     {
         path: 'datatables/sticky-header',
         component: StickyHeaderDatatableComponent,
-        title: 'Sticky Header | VRISTO - Multipurpose Tailwind Dashboard Template',
+        title: 'Sticky Header | HAKASU - HatSolutions - Lets Create Successful Digital Projects Together',
     },
     {
         path: 'datatables/clone-header',
         component: CloneHeaderDatatableComponent,
-        title: 'Clone Header Table | VRISTO - Multipurpose Tailwind Dashboard Template',
+        title: 'Clone Header Table | HAKASU - HatSolutions - Lets Create Successful Digital Projects Together',
     },
     {
         path: 'datatables/column-chooser',
         component: ColumnChooserDatatableComponent,
-        title: 'Column Chooser Table | VRISTO - Multipurpose Tailwind Dashboard Template',
+        title: 'Column Chooser Table | HAKASU - HatSolutions - Lets Create Successful Digital Projects Together',
     },
 ];
 @NgModule({

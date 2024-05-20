@@ -54,21 +54,49 @@ import { DatePickerComponent } from './date-picker';
 import { ClipboardComponent } from './clipboard';
 
 const routes: Routes = [
-    { path: 'forms/basic', component: BasicComponent, title: 'Forms | VRISTO - Multipurpose Tailwind Dashboard Template' },
-    { path: 'forms/input-group', component: InputGroupComponent, title: 'Input Group | VRISTO - Multipurpose Tailwind Dashboard Template' },
-    { path: 'forms/layouts', component: LayoutsComponent, title: 'Form Layouts | VRISTO - Multipurpose Tailwind Dashboard Template' },
-    { path: 'forms/validation', component: ValidationComponent, title: 'Form Validation | VRISTO - Multipurpose Tailwind Dashboard Template' },
-    { path: 'forms/input-mask', component: InputMaskComponent, title: 'Input Mask | VRISTO - Multipurpose Tailwind Dashboard Template' },
-    { path: 'forms/select2', component: Select2Component, title: 'Select2 | VRISTO - Multipurpose Tailwind Dashboard Template' },
-    { path: 'forms/touchspin', component: TouchspinComponent, title: 'Touchspin | VRISTO - Multipurpose Tailwind Dashboard Template' },
-    { path: 'forms/checkbox-radio', component: CheckboxRadioComponent, title: 'Checkbox & Radio | VRISTO - Multipurpose Tailwind Dashboard Template' },
-    { path: 'forms/switches', component: SwitchesComponent, title: 'Switches | VRISTO - Multipurpose Tailwind Dashboard Template' },
-    { path: 'forms/wizards', component: WizardsComponent, title: 'Wizards | VRISTO - Multipurpose Tailwind Dashboard Template' },
-    { path: 'forms/file-upload', component: FileUploadComponent, title: 'File Upload | VRISTO - Multipurpose Tailwind Dashboard Template' },
-    { path: 'forms/quill-editor', component: QuillEditorComponent, title: 'Quill Editor | VRISTO - Multipurpose Tailwind Dashboard Template' },
-    { path: 'forms/markdown-editor', component: MarkdownEditorComponent, title: 'Markdown Editor | VRISTO - Multipurpose Tailwind Dashboard Template' },
-    { path: 'forms/date-picker', component: DatePickerComponent, title: 'Date & Range Picker | VRISTO - Multipurpose Tailwind Dashboard Template' },
-    { path: 'forms/clipboard', component: ClipboardComponent, title: 'Clipboard | VRISTO - Multipurpose Tailwind Dashboard Template' },
+    { path: 'forms/basic', component: BasicComponent, title: 'Forms | HAKASU - HatSolutions - Lets Create Successful Digital Projects Together' },
+    {
+        path: 'forms/input-group',
+        component: InputGroupComponent,
+        title: 'Input Group | HAKASU - HatSolutions - Lets Create Successful Digital Projects Together',
+    },
+    { path: 'forms/layouts', component: LayoutsComponent, title: 'Form Layouts | HAKASU - HatSolutions - Lets Create Successful Digital Projects Together' },
+    {
+        path: 'forms/validation',
+        component: ValidationComponent,
+        title: 'Form Validation | HAKASU - HatSolutions - Lets Create Successful Digital Projects Together',
+    },
+    { path: 'forms/input-mask', component: InputMaskComponent, title: 'Input Mask | HAKASU - HatSolutions - Lets Create Successful Digital Projects Together' },
+    { path: 'forms/select2', component: Select2Component, title: 'Select2 | HAKASU - HatSolutions - Lets Create Successful Digital Projects Together' },
+    { path: 'forms/touchspin', component: TouchspinComponent, title: 'Touchspin | HAKASU - HatSolutions - Lets Create Successful Digital Projects Together' },
+    {
+        path: 'forms/checkbox-radio',
+        component: CheckboxRadioComponent,
+        title: 'Checkbox & Radio | HAKASU - HatSolutions - Lets Create Successful Digital Projects Together',
+    },
+    { path: 'forms/switches', component: SwitchesComponent, title: 'Switches | HAKASU - HatSolutions - Lets Create Successful Digital Projects Together' },
+    { path: 'forms/wizards', component: WizardsComponent, title: 'Wizards | HAKASU - HatSolutions - Lets Create Successful Digital Projects Together' },
+    {
+        path: 'forms/file-upload',
+        component: FileUploadComponent,
+        title: 'File Upload | HAKASU - HatSolutions - Lets Create Successful Digital Projects Together',
+    },
+    {
+        path: 'forms/quill-editor',
+        component: QuillEditorComponent,
+        title: 'Quill Editor | HAKASU - HatSolutions - Lets Create Successful Digital Projects Together',
+    },
+    {
+        path: 'forms/markdown-editor',
+        component: MarkdownEditorComponent,
+        title: 'Markdown Editor | HAKASU - HatSolutions - Lets Create Successful Digital Projects Together',
+    },
+    {
+        path: 'forms/date-picker',
+        component: DatePickerComponent,
+        title: 'Date & Range Picker | HAKASU - HatSolutions - Lets Create Successful Digital Projects Together',
+    },
+    { path: 'forms/clipboard', component: ClipboardComponent, title: 'Clipboard | HAKASU - HatSolutions - Lets Create Successful Digital Projects Together' },
 ];
 @NgModule({
     imports: [

@@ -18,14 +18,34 @@ import { MaintenenceComponent } from './maintenence';
 import { MenuModule } from 'headlessui-angular';
 
 const routes: Routes = [
-    { path: 'pages/contact-us-boxed', component: ContactUsBoxedComponent, title: 'Contact Us Boxed | VRISTO - Multipurpose Tailwind Dashboard Template' },
-    { path: 'pages/contact-us-cover', component: ContactUsCoverComponent, title: 'Contact Us Cover | VRISTO - Multipurpose Tailwind Dashboard Template' },
-    { path: 'pages/coming-soon-boxed', component: ComingSoonBoxedComponent, title: 'Coming Soon Boxed | VRISTO - Multipurpose Tailwind Dashboard Template' },
-    { path: 'pages/coming-soon-cover', component: ComingSoonCoverComponent, title: 'Coming Soon Cover | VRISTO - Multipurpose Tailwind Dashboard Template' },
-    { path: 'pages/error404', component: Error404Component, title: 'Error 404 | VRISTO - Multipurpose Tailwind Dashboard Template' },
-    { path: 'pages/error500', component: Error500Component, title: 'Error 500 | VRISTO - Multipurpose Tailwind Dashboard Template' },
-    { path: 'pages/error503', component: Error503Component, title: 'Error 503 | VRISTO - Multipurpose Tailwind Dashboard Template' },
-    { path: 'pages/maintenence', component: MaintenenceComponent, title: 'Maintenence | VRISTO - Multipurpose Tailwind Dashboard Template' },
+    {
+        path: 'pages/contact-us-boxed',
+        component: ContactUsBoxedComponent,
+        title: 'Contact Us Boxed | HAKASU - HatSolutions - Lets Create Successful Digital Projects Together',
+    },
+    {
+        path: 'pages/contact-us-cover',
+        component: ContactUsCoverComponent,
+        title: 'Contact Us Cover | HAKASU - HatSolutions - Lets Create Successful Digital Projects Together',
+    },
+    {
+        path: 'pages/coming-soon-boxed',
+        component: ComingSoonBoxedComponent,
+        title: 'Coming Soon Boxed | HAKASU - HatSolutions - Lets Create Successful Digital Projects Together',
+    },
+    {
+        path: 'pages/coming-soon-cover',
+        component: ComingSoonCoverComponent,
+        title: 'Coming Soon Cover | HAKASU - HatSolutions - Lets Create Successful Digital Projects Together',
+    },
+    { path: 'pages/error404', component: Error404Component, title: 'Error 404 | HAKASU - HatSolutions - Lets Create Successful Digital Projects Together' },
+    { path: 'pages/error500', component: Error500Component, title: 'Error 500 | HAKASU - HatSolutions - Lets Create Successful Digital Projects Together' },
+    { path: 'pages/error503', component: Error503Component, title: 'Error 503 | HAKASU - HatSolutions - Lets Create Successful Digital Projects Together' },
+    {
+        path: 'pages/maintenence',
+        component: MaintenenceComponent,
+        title: 'Maintenence | HAKASU - HatSolutions - Lets Create Successful Digital Projects Together',
+    },
 ];
 @NgModule({
     imports: [RouterModule.forChild(routes), CommonModule, MenuModule, IconModule],

@@ -18,22 +18,46 @@ import { CoverRegisterComponent } from './cover-register';
 import { MenuModule } from 'headlessui-angular';
 
 const routes: Routes = [
-    { path: 'auth/boxed-lockscreen', component: BoxedLockscreenComponent, title: 'Boxed Lockscreen | VRISTO - Multipurpose Tailwind Dashboard Template' },
+    {
+        path: 'auth/boxed-lockscreen',
+        component: BoxedLockscreenComponent,
+        title: 'Boxed Lockscreen | HAKASU - HatSolutions - Lets Create Successful Digital Projects Together',
+    },
     {
         path: 'auth/boxed-password-reset',
         component: BoxedPasswordResetComponent,
-        title: 'Boxed Password Reset | VRISTO - Multipurpose Tailwind Dashboard Template',
+        title: 'Boxed Password Reset | HAKASU - HatSolutions - Lets Create Successful Digital Projects Together',
     },
-    { path: 'auth/boxed-signin', component: BoxedSigninComponent, title: 'Boxed Signin | VRISTO - Multipurpose Tailwind Dashboard Template' },
-    { path: 'auth/boxed-signup', component: BoxedSignupComponent, title: 'Boxed Signup | VRISTO - Multipurpose Tailwind Dashboard Template' },
-    { path: 'auth/cover-lockscreen', component: CoverLockscreenComponent, title: 'Cover Lockscreen | VRISTO - Multipurpose Tailwind Dashboard Template' },
-    { path: 'auth/cover-login', component: CoverLoginComponent, title: 'Cover Login | VRISTO - Multipurpose Tailwind Dashboard Template' },
+    {
+        path: 'auth/boxed-signin',
+        component: BoxedSigninComponent,
+        title: 'Boxed Signin | HAKASU - HatSolutions - Lets Create Successful Digital Projects Together',
+    },
+    {
+        path: 'auth/boxed-signup',
+        component: BoxedSignupComponent,
+        title: 'Boxed Signup | HAKASU - HatSolutions - Lets Create Successful Digital Projects Together',
+    },
+    {
+        path: 'auth/cover-lockscreen',
+        component: CoverLockscreenComponent,
+        title: 'Cover Lockscreen | HAKASU - HatSolutions - Lets Create Successful Digital Projects Together',
+    },
+    {
+        path: 'auth/cover-login',
+        component: CoverLoginComponent,
+        title: 'Cover Login | HAKASU - HatSolutions - Lets Create Successful Digital Projects Together',
+    },
     {
         path: 'auth/cover-password-reset',
         component: CoverPasswordResetComponent,
-        title: 'Cover Password Reset | VRISTO - Multipurpose Tailwind Dashboard Template',
+        title: 'Cover Password Reset | HAKASU - HatSolutions - Lets Create Successful Digital Projects Together',
     },
-    { path: 'auth/cover-register', component: CoverRegisterComponent, title: 'Cover Register | VRISTO - Multipurpose Tailwind Dashboard Template' },
+    {
+        path: 'auth/cover-register',
+        component: CoverRegisterComponent,
+        title: 'Cover Register | HAKASU - HatSolutions - Lets Create Successful Digital Projects Together',
+    },
 ];
 @NgModule({
     imports: [RouterModule.forChild(routes), CommonModule, MenuModule, IconModule],

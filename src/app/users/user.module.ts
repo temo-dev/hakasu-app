@@ -12,9 +12,9 @@ const routes: Routes = [
     {
         path: 'users/user-account-settings',
         component: UserAccountSettingsComponent,
-        title: 'Account Setting | VRISTO - Multipurpose Tailwind Dashboard Template',
+        title: 'Account Setting | HAKASU - HatSolutions - Lets Create Successful Digital Projects Together',
     },
-    { path: 'users/profile', component: ProfileComponent, title: 'User Profile | VRISTO - Multipurpose Tailwind Dashboard Template' },
+    { path: 'users/profile', component: ProfileComponent, title: 'User Profile | HAKASU - HatSolutions - Lets Create Successful Digital Projects Together' },
 ];
 @NgModule({
     imports: [RouterModule.forChild(routes), CommonModule, IconModule],

@@ -43,17 +43,33 @@ import { MailboxComponent } from './mailbox';
 import { InvoiceListComponent } from './invoice/list';
 
 const routes: Routes = [
-    { path: 'apps/chat', component: ChatComponent, title: 'Chat | VRISTO - Multipurpose Tailwind Dashboard Template' },
-    { path: 'apps/mailbox', component: MailboxComponent, title: 'Mailbox | VRISTO - Multipurpose Tailwind Dashboard Template' },
-    { path: 'apps/scrumboard', component: ScrumboardComponent, title: 'Scrumboard | VRISTO - Multipurpose Tailwind Dashboard Template' },
-    { path: 'apps/contacts', component: ContactsComponent, title: 'Contacts | VRISTO - Multipurpose Tailwind Dashboard Template' },
-    { path: 'apps/notes', component: NotesComponent, title: 'Notes | VRISTO - Multipurpose Tailwind Dashboard Template' },
-    { path: 'apps/todolist', component: TodolistComponent, title: 'Todolist | VRISTO - Multipurpose Tailwind Dashboard Template' },
-    { path: 'apps/invoice/list', component: InvoiceListComponent, title: 'Invoice List | VRISTO - Multipurpose Tailwind Dashboard Template' },
-    { path: 'apps/invoice/preview', component: InvoicePreviewComponent, title: 'Invoice Preview | VRISTO - Multipurpose Tailwind Dashboard Template' },
-    { path: 'apps/invoice/add', component: InvoiceAddComponent, title: 'Invoice Add | VRISTO - Multipurpose Tailwind Dashboard Template' },
-    { path: 'apps/invoice/edit', component: InvoiceEditComponent, title: 'Invoice Edit | VRISTO - Multipurpose Tailwind Dashboard Template' },
-    { path: 'apps/calendar', component: CalendarComponent, title: 'Calendar | VRISTO - Multipurpose Tailwind Dashboard Template' },
+    { path: 'apps/chat', component: ChatComponent, title: 'Chat | HAKASU - HatSolutions - Lets Create Successful Digital Projects Together' },
+    { path: 'apps/mailbox', component: MailboxComponent, title: 'Mailbox | HAKASU - HatSolutions - Lets Create Successful Digital Projects Together' },
+    { path: 'apps/scrumboard', component: ScrumboardComponent, title: 'Scrumboard | HAKASU - HatSolutions - Lets Create Successful Digital Projects Together' },
+    { path: 'apps/contacts', component: ContactsComponent, title: 'Contacts | HAKASU - HatSolutions - Lets Create Successful Digital Projects Together' },
+    { path: 'apps/notes', component: NotesComponent, title: 'Notes | HAKASU - HatSolutions - Lets Create Successful Digital Projects Together' },
+    { path: 'apps/todolist', component: TodolistComponent, title: 'Todolist | HAKASU - HatSolutions - Lets Create Successful Digital Projects Together' },
+    {
+        path: 'apps/invoice/list',
+        component: InvoiceListComponent,
+        title: 'Invoice List | HAKASU - HatSolutions - Lets Create Successful Digital Projects Together',
+    },
+    {
+        path: 'apps/invoice/preview',
+        component: InvoicePreviewComponent,
+        title: 'Invoice Preview | HAKASU - HatSolutions - Lets Create Successful Digital Projects Together',
+    },
+    {
+        path: 'apps/invoice/add',
+        component: InvoiceAddComponent,
+        title: 'Invoice Add | HAKASU - HatSolutions - Lets Create Successful Digital Projects Together',
+    },
+    {
+        path: 'apps/invoice/edit',
+        component: InvoiceEditComponent,
+        title: 'Invoice Edit | HAKASU - HatSolutions - Lets Create Successful Digital Projects Together',
+    },
+    { path: 'apps/calendar', component: CalendarComponent, title: 'Calendar | HAKASU - HatSolutions - Lets Create Successful Digital Projects Together' },
 ];
 
 @NgModule({
