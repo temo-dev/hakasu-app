@@ -133,11 +133,13 @@
                 </div>
             </div>
         </div>
+
         <div
             class="overlay absolute z-[5] hidden h-full w-full rounded-md bg-black/60"
             [ngClass]="{ '!block xl:!hidden': isShowTaskMenu }"
             (click)="isShowTaskMenu = !isShowTaskMenu"
         ></div>
+
         <div class="panel h-full flex-1 overflow-auto p-0">
             <div class="flex h-full flex-col">
                 <div class="flex w-full flex-col gap-4 p-4 sm:flex-row sm:items-center">
@@ -330,7 +332,7 @@
                                                         *ngIf="!task.path && !task.assignee"
                                                         class="grid h-8 w-8 place-content-center rounded-full border border-gray-300 dark:border-gray-800"
                                                     >
-                                                    <icon-user class="w-4.5 h-4.5" />
+                                                        <icon-user class="h-4.5 w-4.5" />
                                                     </div>
                                                 </div>
                                                 <div hlMenu class="dropdown">
@@ -341,20 +343,20 @@
                                                         <ng-container *ngIf="selectedTab !== 'trash'">
                                                             <li>
                                                                 <a href="javascript:;" *hlMenuItem="let menuItem" (click)="addEditTask(task)">
-                                                                    <icon-pencil-paper class="w-4.5 h-4.5 ltr:mr-2 rtl:ml-2 shrink-0" />
+                                                                    <icon-pencil-paper class="h-4.5 w-4.5 shrink-0 ltr:mr-2 rtl:ml-2" />
 
                                                                     Edit
                                                                 </a>
                                                             </li>
                                                             <li>
                                                                 <a href="javascript:;" *hlMenuItem="let menuItem" (click)="deleteTask(task, 'delete')">
-                                                                    <icon-trash-lines class="ltr:mr-2 rtl:ml-2 shrink-0" />
+                                                                    <icon-trash-lines class="shrink-0 ltr:mr-2 rtl:ml-2" />
                                                                     Delete
                                                                 </a>
                                                             </li>
                                                             <li>
                                                                 <a href="javascript:;" *hlMenuItem="let menuItem" (click)="setImportant(task)">
-                                                                    <icon-star class="w-4.5 h-4.5 ltr:mr-2 rtl:ml-2 shrink-0" />
+                                                                    <icon-star class="h-4.5 w-4.5 shrink-0 ltr:mr-2 rtl:ml-2" />
                                                                     <span> {{ task.status === 'important' ? 'Not Important' : 'Important' }} </span>
                                                                 </a>
                                                             </li>
@@ -362,13 +364,13 @@
                                                         <ng-container *ngIf="selectedTab === 'trash'">
                                                             <li>
                                                                 <a href="javascript:;" *hlMenuItem="let menuItem" (click)="deleteTask(task, 'deletePermanent')">
-                                                                    <icon-trash-lines class="ltr:mr-2 rtl:ml-2 shrink-0" />
+                                                                    <icon-trash-lines class="shrink-0 ltr:mr-2 rtl:ml-2" />
                                                                     Permanent Delete
                                                                 </a>
                                                             </li>
                                                             <li>
                                                                 <a href="javascript:;" *hlMenuItem="let menuItem" (click)="deleteTask(task, 'restore')">
-                                                                    <icon-restore class="ltr:mr-2 rtl:ml-2 shrink-0" />
+                                                                    <icon-restore class="shrink-0 ltr:mr-2 rtl:ml-2" />
                                                                     Restore Task
                                                                 </a>
                                                             </li>
@@ -389,6 +391,8 @@
             </div>
         </div>
     </div>
+
+    <!--Modal-->
     <modal #addTaskModal class="no-footer">
         <ng-template #modalHeader>
             <div class="!font-medium">{{ params.value.id ? 'Edit Task' : 'Add Task' }}</div>

@@ -171,6 +171,17 @@
                             </li>
 
                             <li class="nav-item">
+                                <a routerLink="/apps/kasa" class="group" routerLinkActive="active" (click)="toggleMobileMenu()">
+                                    <div class="flex items-center">
+                                        <icon-desktop class="shrink-0 group-hover:!text-primary" />
+
+                                        <span class="text-black ltr:pl-3 rtl:pr-3 dark:text-[#506690] dark:group-hover:text-white-dark"
+                                            >{{ 'kasa' | translate }}</span
+                                        >
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="nav-item">
                                 <a routerLink="/apps/calendar" class="group" routerLinkActive="active" (click)="toggleMobileMenu()">
                                     <div class="flex items-center">
                                         <icon-menu-calendar class="shrink-0 group-hover:!text-primary" />

@@ -17,7 +17,7 @@ module.exports = {
         extend: {
             colors: {
                 primary: {
-                    DEFAULT: '#4361ee',
+                    DEFAULT: '#3C710F',
                     light: '#eaf1ff',
                     'dark-light': 'rgba(67,97,238,.15)',
                 },
@@ -112,6 +112,9 @@ module.exports = {
                     },
                 },
             }),
+            flexGrow: {
+                2: '2'
+            }
         },
     },
     plugins: [

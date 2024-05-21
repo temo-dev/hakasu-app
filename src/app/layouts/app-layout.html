@@ -14,7 +14,7 @@
         <!-- screen loader -->
         <div
             *ngIf="store.isShowMainLoader"
-            class="screen_loader fixed inset-0 bg-[#fafafa] dark:bg-[#060818] z-[60] grid place-content-center animate__animated"
+            class="screen_loader animate__animated fixed inset-0 z-[60] grid place-content-center bg-[#fafafa] dark:bg-[#060818]"
         >
             <svg width="64" height="64" viewBox="0 0 135 135" xmlns="http://www.w3.org/2000/svg" fill="#4361ee">
                 <path
@@ -53,7 +53,7 @@
         </div>
 
         <!-- BEGIN APP SETTING LAUNCHER -->
-        <setting></setting>
+        <!-- <setting></setting> -->
         <!-- END APP SETTING LAUNCHER -->
 
         <div class="main-container min-h-screen text-black dark:text-white-dark" [ngClass]="[store.navbar]">
@@ -61,7 +61,7 @@
             <sidebar></sidebar>
             <!--  END SIDEBAR  -->
 
-            <div class="main-content flex flex-col min-h-screen">
+            <div class="main-content flex min-h-screen flex-col">
                 <!--  BEGIN TOP NAVBAR  -->
                 <header></header>
                 <!--  END TOP NAVBAR  -->
