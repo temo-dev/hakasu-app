@@ -1,6 +1,80 @@
-<button type="button" class="btn btn-primary btn-lg" (click)="isShowTable = true">Show Table</button>
+<div class="mb-5">
+    <div class="mb-5 mt-3 grid grid-cols-4 gap-2 rtl:space-x-reverse sm:flex sm:flex-wrap sm:justify-center sm:space-x-3">
+        <a
+            href="javascript:;"
+            class="flex flex-col items-center justify-center rounded-lg bg-[#f1f2f3] p-7 py-3 !outline-none transition duration-300 hover:!bg-success hover:text-white hover:shadow-[0_5px_15px_0_rgba(0,0,0,0.30)] dark:bg-[#191e3a]"
+            [ngClass]="{ '!bg-success text-white': tab.toLowerCase() === 'home' }"
+            (click)="tab = 'home'"
+        >
+            <icon-home class="mb-1" />
+            Home
+        </a>
+
+        <a
+            href="javascript:;"
+            class="flex flex-col items-center justify-center rounded-lg bg-[#f1f2f3] p-7 py-3 !outline-none transition duration-300 hover:!bg-success hover:text-white hover:shadow-[0_5px_15px_0_rgba(0,0,0,0.30)] dark:bg-[#191e3a]"
+            [ngClass]="{ '!bg-success text-white': tab.toLowerCase() === 'garden' }"
+            (click)="tab = 'garden'"
+        >
+            <icon-cloud-download class="mb-1 h-5 w-5" />
+            Garden
+        </a>
+
+        <a
+            href="javascript:;"
+            class="flex flex-col items-center justify-center rounded-lg bg-[#f1f2f3] p-7 py-3 !outline-none transition duration-300 hover:!bg-success hover:text-white hover:shadow-[0_5px_15px_0_rgba(0,0,0,0.30)] dark:bg-[#191e3a]"
+            [ngClass]="{ '!bg-success text-white': tab.toLowerCase() === 'to-go' }"
+            (click)="tab = 'to-go'"
+        >
+            <icon-phone class="mb-1" />
+            To Go
+        </a>
+
+        <a
+            href="javascript:;"
+            class="flex flex-col items-center justify-center rounded-lg bg-[#f1f2f3] p-7 py-3 !outline-none transition duration-300 hover:!bg-success hover:text-white hover:shadow-[0_5px_15px_0_rgba(0,0,0,0.30)] dark:bg-[#191e3a]"
+            [ngClass]="{ '!bg-success text-white': tab.toLowerCase() === 'delivery' }"
+            (click)="tab = 'delivery'"
+        >
+            <icon-users-group class="mb-1 h-5 w-5" />
+            Delivery
+        </a>
+    </div>
+    <hr />
+    <div class="flex-1 text-sm">
+        <div *ngIf="tab.toLowerCase() === 'home'">
+            <div class="mb-5 mt-3 grid grid-cols-4 gap-2 text-center rtl:space-x-reverse sm:flex sm:flex-wrap sm:justify-center sm:space-x-3">
+                <a
+                    *ngFor="let item of [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]"
+                    href="javascript:;"
+                    class="flex flex-col items-center justify-center rounded-lg bg-[#f1f2f3] p-7 py-3 !outline-none transition duration-300 hover:!bg-success hover:text-white hover:shadow-[0_5px_15px_0_rgba(0,0,0,0.30)] dark:bg-[#191e3a]"
+                    [ngClass]="{ '!bg-success text-white': tab.toLowerCase() === 'available' }"
+                >
+                    <icon-archive class="mb-1" />
+                    Table {{ item }}
+                </a>
+            </div>
+        </div>
+        <div *ngIf="tab.toLowerCase() === 'garden'">
+            <div class="mb-5 mt-3 grid grid-cols-4 gap-2 text-center rtl:space-x-reverse sm:flex sm:flex-wrap sm:justify-center sm:space-x-3">
+                <a
+                    *ngFor="let item of [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]"
+                    href="javascript:;"
+                    class="flex flex-col items-center justify-center rounded-lg bg-[#f1f2f3] p-7 py-3 !outline-none transition duration-300 hover:!bg-success hover:text-white hover:shadow-[0_5px_15px_0_rgba(0,0,0,0.30)] dark:bg-[#191e3a]"
+                    [ngClass]="{ '!bg-success text-white': tab.toLowerCase() === 'available' }"
+                >
+                    <icon-archive class="mb-1" />
+                    Garden {{ item }}
+                </a>
+            </div>
+        </div>
+        <div *ngIf="tab.toLowerCase() === 'to-go'"></div>
+        <div *ngIf="tab.toLowerCase() === 'delivery'"></div>
+    </div>
+</div>
+<!--Drawer Table-->
 <div>
-    <div class="fixed inset-0 z-[51] hidden bg-[black]/60 px-4 transition-[display]" [ngClass]="{ '!block': isShowTable }" (click)="isShowTable = false"></div>
+    <div class="fixed inset-0 z-[51] hidden bg-[black]/60 px-3 transition-[display]" [ngClass]="{ '!block': isShowTable }" (click)="isShowTable = false"></div>
     <nav
         class="fixed bottom-0 top-0 z-[51] w-full max-w-[800px] bg-white p-4 shadow-[5px_0_25px_0_rgba(94,92,154,0.1)] transition-[right] duration-300 ltr:-right-[800px] rtl:-left-[800px] dark:bg-[#0e1726]"
         [ngClass]="{ 'ltr:!right-0 rtl:!left-0': isShowTable }"
@@ -12,48 +86,50 @@
         >
             <icon-dollar-sign-circle class="h-5 w-5 animate-[spin_3s_linear_infinite]" />
         </a>
-        <ng-scrollbar class="relative h-full overflow-x-hidden ltr:-mr-3 ltr:pr-3 rtl:-ml-3 rtl:pl-3">
-            <div class="flex flex-col content-between">
-                <!--Header-->
+        <ng-scrollbar class="relative overflow-x-hidden ltr:-mr-3 ltr:pr-3 rtl:-ml-3 rtl:pl-3">
+            <div class="flex max-h-screen min-h-[600px] flex-col justify-between overflow-y-scroll">
                 <div>
-                    <div class="relative rounded bg-lime-600 py-3 text-center font-bold">
-                        <h1 class="text-3xl text-white">Table No.1</h1>
+                    <!--Header-->
+                    <div class="relative rounded bg-lime-600 py-1 text-center font-bold">
+                        <h1 class="text-xl text-white">Table No.1</h1>
+                    </div>
+
+                    <!--Table-->
+                    <div class="table-responsive max-h-[500px] overflow-y-scroll">
+                        <table class="table-fixed">
+                            <thead>
+                                <tr class="text-center text-xl font-bold">
+                                    <th>Code</th>
+                                    <th>Items</th>
+                                    <th>Qty</th>
+                                    <th>Total</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr *ngFor="let data of tableData">
+                                    <td class="text-base">{{ data.code }}</td>
+                                    <td class="whitespace-break-spaces text-base">{{ data.item }}</td>
+                                    <td>
+                                        <div class="w-8 rounded bg-lime-600 text-center text-lg font-bold text-white">{{ data.qty }}</div>
+                                    </td>
+                                    <td class="text-base">{{ data.price * data.qty }}<span class="ml-1">kc</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
                 </div>
-                <!--Table-->
-                <div class="table-responsive py-10">
-                    <table class="table-fixed">
-                        <thead>
-                            <tr class="text-center text-lg font-bold">
-                                <th>Code</th>
-                                <th>Items</th>
-                                <th>Qty</th>
-                                <th>Total</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr *ngFor="let data of tableData">
-                                <td class="text-lg">{{ data.code }}</td>
-                                <td class="whitespace-break-spaces text-lg">{{ data.item }}</td>
-                                <td class="rounded bg-lime-600 text-center text-lg font-bold text-white">
-                                    {{ data.qty }}
-                                </td>
-                                <td class="text-lg">{{ data.price * data.qty }}<span class="ml-1">kc</span></td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
+
                 <!--Footer-->
-                <div class="rounded bg-black-light p-5">
+                <div class="rounded bg-lime-50 p-1">
                     <div class="my-3 flex justify-between">
-                        <h3 class="m-0 text-base font-bold text-slate-950">Sub Total</h3>
-                        <h3 class="m-0 text-base font-bold text-lime-600 dark:text-white-dark">10000<span class="ml-1">kc</span></h3>
+                        <h3 class="text-slate-950">Sub Total</h3>
+                        <h3 class="dark:text-white-dark">10000<span class="ml-1">kc</span></h3>
                     </div>
                     <div class="my-3 flex justify-between">
-                        <h3 class="text-base font-bold text-slate-950">Discount</h3>
-                        <h3 class="text-base font-bold text-lime-600 dark:text-white-dark">0<span class="ml-1">kc</span></h3>
+                        <h3 class="text-slate-950">Discount</h3>
+                        <h3 class="dark:text-white-dark">0<span class="ml-1">kc</span></h3>
                     </div>
-                    <div class="my-8 flex justify-evenly">
+                    <div class="my-8 flex justify-between">
                         <h3 class="text-2xl font-bold text-slate-950">Total Payment</h3>
                         <h3 class="text-2xl font-bold text-lime-600">10000<span class="ml-1">kc</span></h3>
                     </div>
