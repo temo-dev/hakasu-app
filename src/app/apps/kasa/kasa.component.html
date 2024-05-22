@@ -1,3 +1,4 @@
+<!--Table-->
 <div class="mb-5">
     <div class="mb-5 mt-3 grid grid-cols-4 gap-2 rtl:space-x-reverse sm:flex sm:flex-wrap sm:justify-center sm:space-x-3">
         <a
@@ -269,28 +270,42 @@
                                 </div>
                             </div>
                         </div>
+                        <hr />
+                        <!--Table-->
+                        <div class="table-responsive max-h-[500px] overflow-y-scroll">
+                            <table class="table-fixed">
+                                <thead>
+                                    <tr class="text-center text-xl font-bold">
+                                        <th>Code</th>
+                                        <th>Items</th>
+                                        <th>Qty</th>
+                                        <th>Total</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr *ngFor="let data of tableData">
+                                        <td class="text-base">{{ data.code }}</td>
+                                        <td class="whitespace-break-spaces text-base">{{ data.item }}</td>
+                                        <td>
+                                            <ngx-number-spinner [value]="1" [min]="1" [max]="100" class="touchspin"> </ngx-number-spinner>
+                                        </td>
+                                        <td class="text-base">{{ data.price * data.qty }}<span class="ml-1">kc</span></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
                     </div>
                 </div>
 
                 <!--Footer-->
                 <div class="rounded bg-lime-50 p-1">
-                    <div class="my-3 flex justify-between">
-                        <h3 class="text-slate-950">Sub Total</h3>
-                        <h3 class="dark:text-white-dark">10000<span class="ml-1">kc</span></h3>
-                    </div>
-                    <div class="my-3 flex justify-between">
-                        <h3 class="text-slate-950">Discount</h3>
-                        <h3 class="dark:text-white-dark">0<span class="ml-1">kc</span></h3>
-                    </div>
                     <div class="my-8 flex justify-between">
                         <h3 class="text-2xl font-bold text-slate-950">Total Payment</h3>
                         <h3 class="text-2xl font-bold text-lime-600">10000<span class="ml-1">kc</span></h3>
                     </div>
                     <div class="flex w-full flex-wrap justify-around gap-3">
                         <button type="button" class="btn btn-danger btn-lg" (click)="isShowAddItem = false"><icon-x class="mr-3 h-5 w-5" />Cancel</button>
-                        <button type="button" class="btn btn-lg btn-primary"><icon-edit class="mr-3 h-5 w-5" />Add Items</button>
-                        <button type="button" class="btn btn-lg btn-info" (click)="showPayment()"><icon-cash-banknotes class="mr-3 h-5 w-5" />Pay All</button>
-                        <button type="button" class="btn btn-lg btn-info"><icon-users-group class="mr-3 h-5 w-5" />Pay Share</button>
+                        <button type="button" class="btn btn-lg btn-primary"><icon-edit class="mr-3 h-5 w-5" />Order Items</button>
                     </div>
                 </div>
             </div>
