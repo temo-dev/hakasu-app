@@ -8,6 +8,7 @@ import Swal from 'sweetalert2';
 export class KasaComponent {
     constructor() {}
     isShowTable = false;
+    isShowAddItem = false;
     tableData = [
         {
             id: 1,
@@ -115,7 +116,9 @@ export class KasaComponent {
             qty: 3,
         },
     ];
+
     tab: string = 'home';
+    category: string = 'menu';
     showPayment() {
         Swal.fire({
             icon: 'question',
