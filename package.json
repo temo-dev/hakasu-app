@@ -22,6 +22,8 @@
     "@angular/service-worker": "^15.2.10",
     "@bhplugin/ng-datatable": "^0.0.2",
     "@dustfoundation/ngx-sortablejs": "^15.0.0",
+    "@fortawesome/angular-fontawesome": "^0.12.1",
+    "@fortawesome/free-solid-svg-icons": "^6.5.2",
     "@fullcalendar/angular": "^6.1.8",
     "@fullcalendar/core": "^6.1.8",
     "@fullcalendar/daygrid": "^6.1.8",

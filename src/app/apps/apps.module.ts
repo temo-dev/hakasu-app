@@ -44,6 +44,7 @@ import { InvoiceListComponent } from './invoice/list';
 import { KasaComponent } from './kasa/kasa.component';
 import { NgSelectModule } from '@ng-select/ng-select';
 import { NgxNumberSpinnerModule } from 'ngx-number-spinner';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 const routes: Routes = [
     { path: 'apps/chat', component: ChatComponent, title: 'Chat | HAKASU - HatSolutions - Lets Create Successful Digital Projects Together' },
@@ -100,6 +101,7 @@ const routes: Routes = [
         IconModule,
         NgSelectModule,
         NgxNumberSpinnerModule,
+        FontAwesomeModule,
     ],
     declarations: [
         ChatComponent,
